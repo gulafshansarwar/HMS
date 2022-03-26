@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyLight"
+    tools:context=".ChooseCategory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingBottom="80dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:paddingTop="30dp"
+                android:text="Choose Department"
+                android:textColor="@color/colorWhite"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="what you want?"
+                android:textColor="@color/colorGreyLight"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/round_search"
+                android:hint="search"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-110dp"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                app:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/dentist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Dentist"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    app:srcCompat="@drawable/dermetologist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Dermetologist"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/gastrologist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Gastrologist"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="left"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    app:srcCompat="@drawable/gynocologist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Gynocologist"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/cardiologist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Cardiologist"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/orthopedic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Orthopedic"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/optometrist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Optometrist"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/neurologist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Deparment"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/childspecialist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Child Specialist"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_rectangle"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/physician" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Physician"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/round_button"
+            android:padding="20dp"
+            android:text="Load More"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
